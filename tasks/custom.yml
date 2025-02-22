@@ -1,0 +1,4 @@
+---
+- name: Run installer oh-my-zsh and powerlevel10k
+  command: "{{ custom_script }}"
+  changed_when: false
