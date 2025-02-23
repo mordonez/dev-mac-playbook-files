@@ -1,5 +1,5 @@
 ---
-#downloads: ~/.ansible-downloads/
+downloads: ~/.ansible-downloads/
 ohmyzsh_script: "sh \"$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)\""
 configure_dotfiles: true
 configure_terminal: true
@@ -8,14 +8,68 @@ configure_osx: true
 # Set to 'true' to configure the Dock via dockutil.
 configure_dock: false
 dockitems_remove: []
-# - Launchpad
-# - TV
-# - Podcasts
-# - 'App Store'
-dockitems_persist: []
-# - name: "Sublime Text"
-#   path: "/Applications/Sublime Text.app/"
-#   pos: 5
+ - TV
+ - 'Mensajes'
+ - 'Mail'
+ - 'Fotos'
+ - 'Freeform'
+ - 'Mapas'
+ - 'Música'
+ - 'Notas'
+ - 'Recordatorios'
+ - Podcasts
+ - 'App Store'
+ - 'FaceTime'
+ - Maps
+dockitems_persist:
+ - name: "Obsidian"
+   path: "/Applications/Obsidian.app/"
+   pos: 3
+ - name: "Visual Studio Code"
+   path: "/Applications/Visual Studio Code.app/"
+   pos: 4
+ - name: "Bitwarden"
+   path: "/Applications/Bitwarden.app/"
+   pos: 5
+ - name: "iTerm"
+   path: "/Applications/iTerm.app/"
+   pos: 6
+ - name: "Microsoft Outlook"
+   path: "/Applications/Microsoft Outlook.app/"
+   pos: 7
+ - name: "Microsoft Teams"
+   path: "/Applications/Microsoft Teams.app/"
+   pos: 8
+ - name: "Spotify"
+   path: "/Applications/Spotify.app/"
+   pos: 9
+ - name: "Firefox"
+   path: "/Applications/Firefox.app/"
+   pos: 10
+ - name: "Google Chrome"
+   path: "/Applications/Google Chrome.app/"
+   pos: 11
+ - name: "DuckDuckGo"
+   path: "/Applications/DuckDuckGo.app/"
+   pos: 12
+ - name: "Safari"
+   path: "/Applications/Safari.app/"
+   pos: 13
+ - name: "Tor"
+   path: "/Applications/Tor Browser.app/"
+   pos: 14
+ - name: "Cyberduck"
+   path: "/Applications/Cyberduck.app/"
+   pos: 15
+ - name: "WhatsApp"
+   path: "/Applications/WhatsApp.app/"
+   pos: 16
+ - name: "AutoFirma"
+   path: "/Applications/AutoFirma.app/"
+   pos: 17
+ - name: "LICEcap"
+   path: "/Applications/LICEcap.app/"
+   pos: 18
 
 configure_sudoers: false
 sudoers_custom_config: ''
@@ -36,18 +90,27 @@ dotfiles_files:
 
 homebrew_installed_packages:
   # - ansible # Installed via Pip.
+  - act
   - autoconf
   - bash-completion
   - gettext
+  - ffmpeg
   - git
+  - gitleaks
   - gh
   - gpg
   - httpie
   - iperf
+  - openjdk
+  - jmeter
+  - jq
   - libevent
+  - postman
+  - llm
   - sqlite
   - nmap
   - node
+  - rclone
   - nvm
   - ssh-copy-id
   - cowsay
@@ -57,17 +120,25 @@ homebrew_installed_packages:
   - wget
   - wrk
   - zsh-history-substring-search
+  - zsh-autosuggestions
+  - zsh-syntax-highlighting
 
 homebrew_taps: []
 
 homebrew_cask_appdir: /Applications
 homebrew_cask_apps:
+  - appcleaner
+  - autofirma
+  - brave-browser
+  - burp-suite
   - chromedriver
   - cyberduck
   - bitwarden
   - docker
+  - duckduckgo
   - dropbox
   - firefox
+  - font-fira-code
   - google-chrome
   - google-drive
   - licecap
@@ -85,13 +156,19 @@ homebrew_cask_apps:
   - microsoft-powerpoint
   - microsoft-teams
   - microsoft-word
+  - lando
+  - obsidian
   - onedrive
   - owasp-zap
+  - kindle
   - postman
   - rectangle
+  - mitmproxy
   - spotify
   - sublime-text
   - the-unarchiver
+  - vlc
+  - utm
   - tor-browser
   - visual-studio-code
   - whatsapp
