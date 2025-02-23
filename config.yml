@@ -156,7 +156,6 @@ homebrew_cask_apps:
   - microsoft-powerpoint
   - microsoft-teams
   - microsoft-word
-  - lando
   - obsidian
   - onedrive
   - owasp-zap
